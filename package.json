@@ -2,8 +2,9 @@
   "name": "portifolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "/index.html",
   "scripts": {
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/stanmpakati/stanmpakati-github.io/issues"
   },
-  "homepage": "https://github.com/stanmpakati/stanmpakati-github.io#readme"
+  "homepage": "https://github.com/stanmpakati/stanmpakati-github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
