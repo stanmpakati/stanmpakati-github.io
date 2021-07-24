@@ -4,94 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Stan Mpakati</title>
+
+    <!-- SEO -->
+    <meta
+      property="og:title"
+      content="Stan Mpakati - full-stack web and mobile developer"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Stan Mpakati - full-stack web and mobile developer"
+    />
+    <meta property="og:locale" content="en_ZW" />
+    <meta
+      property="og:description"
+      content="A freelance software engineer specialized in both front-end and back-end. See 'My offer' and 'my portfolio' to read more."
+    />
+    <!-- <meta property="og:url" content="https://jtom.me/"> -->
   </head>
   <body>
-    <!-- ------------------HOME----------------------- -->
-    <div class="container" fxLayout="column" fxLayoutAlign="space-around start">
-      <div class="items">
-        <div id="circle-avatar">
-          <img src="assets/images/stan.jpg" alt="" />
-        </div>
-        <p class="mat-caption">
-          Are you looking for a Mobile and Web Developer?
-        </p>
-        <h1>I'm <span class="primary-color">Stan Mpakati</span></h1>
-        <p>
-          I'm a mobile and web developer from Zimbabwe. Currently still in
-          school but I can still meet all your web and mobile app needs
-        </p>
-
-        <div class="button-row" fxLayout="row" fxLayoutGap="8px">
-          <a
-            title="Pdf"
-            href="assets/docs/stan_cv.pdf"
-            download="stan_cv.pdf"
-            mat-raised-button
-            color="accent"
-            (click)="openSnackBar()"
-          >
-            <mat-icon>download</mat-icon> Download CV
+    <!-- --------------------SIDE NAV----------------- -->
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus icon"></i>
+        <div class="logo_name">CodingLab</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <div id="circle-avatar" class="logo_details">
+        <img src="static/stan.jpg" alt="" />
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#">
+            <i class="bx bx-home-alt"></i>
+            <span class="links_name">Home</span>
           </a>
-          <a mat-stroked-button color="accent" routerLink="/portifolio"
-            >Continue</a
-          >
-        </div>
-      </div>
+          <span class="tooltip">Home</span>
+        </li>
+
+        <li class="profile">
+          <div class="profile-details">
+            <!--<img src="profile.jpg" alt="profileImg">-->
+            <div class="name_job">
+              <div class="name">Prem Shahi</div>
+              <div class="job">Web designer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
     </div>
 
-    <!-- Contact -->
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p>I would love to meet, Get in touch with any of the following means</p>
-      <hr />
-      <div class="w-100" fxLayout="row" fxLayoutAlign="space-around center">
-        <!-- Email -->
-        <div class="contact-bubble">
-          <div class="icon-bubble">
-            <mat-icon>email</mat-icon>
-          </div>
-          <span class="contact-media">Email</span>
-          <a href="#">stanmpakatig@gmail.com</a>
-        </div>
+    <!-- ------------------HOME----------------------- -->
+    <section class="home-section">
+      <div
+        class="container"
+        fxLayout="column"
+        fxLayoutAlign="space-around start"
+      >
+        <div class="items">
+          <p class="mat-caption">
+            Are you looking for a Mobile and Web Developer?
+          </p>
+          <h1>I'm <span class="primary-color">Stan Mpakati</span></h1>
+          <p>
+            I'm a mobile and web developer from Zimbabwe. Currently still in
+            school but I can still meet all your web and mobile app needs
+          </p>
 
-        <!-- Phone -->
-        <div class="contact-bubble">
-          <div class="icon-bubble">
-            <mat-icon>phone</mat-icon>
+          <div class="button-row" fxLayout="row" fxLayoutGap="8px">
+            <a
+              title="Pdf"
+              href="assets/docs/stan_cv.pdf"
+              download="stan_cv.pdf"
+              mat-raised-button
+              color="accent"
+              (click)="openSnackBar()"
+            >
+              <mat-icon>download</mat-icon> Download CV
+            </a>
+            <a mat-stroked-button color="accent" routerLink="/portifolio"
+              >Continue</a
+            >
           </div>
-          <span class="contact-media">Whatsapp</span>
-          <a href="#">+263 775 906 373</a>
-        </div>
-
-        <!-- Twitter -->
-        <div class="contact-bubble">
-          <div class="icon-bubble">
-            <mat-icon>twitter</mat-icon>
-          </div>
-          <span class="contact-media">Twitter</span>
-          <a href="#">stanmpakati</a>
-        </div>
-
-        <!-- Github -->
-        <div class="contact-bubble">
-          <div class="icon-bubble">
-            <mat-icon>git</mat-icon>
-          </div>
-          <span class="contact-media">Github</span>
-          <a href="#">stanmpakati</a>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-      This website was developed by Stan Mpakati
-      <br />
-      @2021
-    </footer>
+      <!-- Contact -->
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>
+          I would love to meet, Get in touch with any of the following means
+        </p>
+        <hr />
+        <div class="w-100" fxLayout="row" fxLayoutAlign="space-around center">
+          <!-- Email -->
+          <div class="contact-bubble">
+            <div class="icon-bubble">
+              <mat-icon>email</mat-icon>
+            </div>
+            <span class="contact-media">Email</span>
+            <a href="#">stanmpakatig@gmail.com</a>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-bubble">
+            <div class="icon-bubble">
+              <mat-icon>phone</mat-icon>
+            </div>
+            <span class="contact-media">Whatsapp</span>
+            <a href="#">+263 775 906 373</a>
+          </div>
+
+          <!-- Twitter -->
+          <div class="contact-bubble">
+            <div class="icon-bubble">
+              <mat-icon>twitter</mat-icon>
+            </div>
+            <span class="contact-media">Twitter</span>
+            <a href="#">stanmpakati</a>
+          </div>
+
+          <!-- Github -->
+          <div class="contact-bubble">
+            <div class="icon-bubble">
+              <mat-icon>git</mat-icon>
+            </div>
+            <span class="contact-media">Github</span>
+            <a href="#">stanmpakati</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        This website was developed by Stan Mpakati
+        <br />
+        @2021
+      </footer>
+    </section>
 
     <!-- JavaScript -->
     <script src="/js/main.js"></script>
