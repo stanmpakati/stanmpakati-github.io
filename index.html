@@ -9,7 +9,82 @@
     <title>Stan Mpakati</title>
   </head>
   <body>
-    Stan says Hie
+    <!-- ------------------HOME----------------------- -->
+    <div class="container" fxLayout="column" fxLayoutAlign="space-around start">
+      <div class="items">
+        <div id="circle-avatar">
+          <img src="assets/images/stan.jpg" alt="" />
+        </div>
+        <p class="mat-caption">
+          Are you looking for a Mobile and Web Developer?
+        </p>
+        <h1>I'm <span class="primary-color">Stan Mpakati</span></h1>
+        <p>
+          I'm a mobile and web developer from Zimbabwe. Currently still in
+          school but I can still meet all your web and mobile app needs
+        </p>
+
+        <div class="button-row" fxLayout="row" fxLayoutGap="8px">
+          <a
+            title="Pdf"
+            href="assets/docs/stan_cv.pdf"
+            download="stan_cv.pdf"
+            mat-raised-button
+            color="accent"
+            (click)="openSnackBar()"
+          >
+            <mat-icon>download</mat-icon> Download CV
+          </a>
+          <a mat-stroked-button color="accent" routerLink="/portifolio"
+            >Continue</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>I would love to meet, Get in touch with any of the following means</p>
+      <hr />
+      <div class="w-100" fxLayout="row" fxLayoutAlign="space-around center">
+        <!-- Email -->
+        <div class="contact-bubble">
+          <div class="icon-bubble">
+            <mat-icon>email</mat-icon>
+          </div>
+          <span class="contact-media">Email</span>
+          <a href="#">stanmpakatig@gmail.com</a>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-bubble">
+          <div class="icon-bubble">
+            <mat-icon>phone</mat-icon>
+          </div>
+          <span class="contact-media">Whatsapp</span>
+          <a href="#">+263 775 906 373</a>
+        </div>
+
+        <!-- Twitter -->
+        <div class="contact-bubble">
+          <div class="icon-bubble">
+            <mat-icon>twitter</mat-icon>
+          </div>
+          <span class="contact-media">Twitter</span>
+          <a href="#">stanmpakati</a>
+        </div>
+
+        <!-- Github -->
+        <div class="contact-bubble">
+          <div class="icon-bubble">
+            <mat-icon>git</mat-icon>
+          </div>
+          <span class="contact-media">Github</span>
+          <a href="#">stanmpakati</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>

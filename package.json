@@ -19,5 +19,8 @@
   "homepage": "https://github.com/stanmpakati/stanmpakati-github.io#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2"
   }
 }
