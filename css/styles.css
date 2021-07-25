@@ -39,7 +39,7 @@ a {
 html {
   scroll-behavior: smooth;
   font-size: 1.2rem;
-  background: #e4e9f7;
+  background: #f5f7fd;
 }
 
 h1 {
@@ -499,6 +499,11 @@ footer {
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
+  body {
+    width: 100vw;
+    /* height: 100vh; */
+    overflow-x: hidden;
+  }
   .mobile .sidebar {
     width: 100%;
     height: 78px;
@@ -534,5 +539,43 @@ footer {
 
   .sidebar li a .links_name {
     display: none;
+  }
+
+  .sidebar li:hover .tooltip {
+    display: none;
+  }
+
+  .sidebar li.profile {
+    display: none;
+  }
+
+  .page {
+    height: calc(100% - 78px);
+    width: 100% !important;
+
+    position: static;
+  }
+
+  #home-section {
+  }
+
+  .container {
+    margin: 14px 28px;
+  }
+
+  #home-section .btn-primary {
+    margin-right: 16px;
+  }
+
+  #about {
+    height: 100%;
+  }
+
+  #about .page-content {
+    margin-top: 50px;
+  }
+
+  #skills-section {
+    flex-flow: column;
   }
 }
