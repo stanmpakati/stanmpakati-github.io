@@ -563,16 +563,16 @@ footer {
     margin: 14px 28px;
   }
 
+  .page-content {
+    margin-top: 50px;
+  }
+
   #home-section .btn-primary {
     margin-right: 16px;
   }
 
   #about {
     height: 100%;
-  }
-
-  #about .page-content {
-    margin-top: 50px;
   }
 
   #skills-section {
