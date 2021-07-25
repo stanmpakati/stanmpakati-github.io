@@ -402,7 +402,19 @@ h1 {
   font-size: 32px;
 }
 
-#tech-stacks i:hover .tooltip {
+#tech-stacks .icons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 32px;
+}
+
+#tech-stacks .icons ul li {
+  display: inline;
+  position: relative;
+}
+
+#tech-stacks icons ul li i:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
   transition: all 0.4s ease;
