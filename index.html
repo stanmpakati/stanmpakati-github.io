@@ -87,8 +87,6 @@
     <section class='page' id="home-section">
       <div
         class="container"
-        fxLayout="column"
-        fxLayoutAlign="space-around start"
       >
         <div class="items">
           <p class="mat-caption">
@@ -100,20 +98,16 @@
             school but I can still meet all your web and mobile app needs
           </p>
 
-          <div class="button-row" fxLayout="row" fxLayoutGap="8px">
+          <div>
             <a
               title="Pdf"
-              href="assets/docs/stan_cv.pdf"
-              download="stan_cv.pdf"
-              mat-raised-button
+              href="/static/Stan Mpakati CV.pdf"
+              download="Stan Mpakati CV.pdf"
               color="accent"
-              (click)="openSnackBar()"
             >
               <mat-icon>download</mat-icon> Download CV
             </a>
-            <a mat-stroked-button color="accent" routerLink="/portifolio"
-              >Continue</a
-            >
+            <a href="#about">Continue</a>
           </div>
         </div>
       </div>

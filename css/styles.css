@@ -1,44 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Shippori+Mincho:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&family=Turret+Road:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-footer {
-  background-color: #2e2e2e;
-  color: #ffffff;
-
-  padding: 1rem 3rem;
-}
-
 /* ------------------ */
 /* You can add global styles to this file, and also import other style files */
-
-.container {
-  margin: 0rem 2rem;
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.button-row {
-  width: 100%;
-}
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-.mat-caption {
-  color: rgb(128, 128, 128);
-}
-
-.active {
-  color: coral;
-}
 
 /* ---------------------------------- */
 h1 {
@@ -95,6 +59,8 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+/* ------------------------------ Side Bar ------------------------ */
 .sidebar {
   position: fixed;
   left: 0;
@@ -300,30 +266,17 @@ html {
   flex-wrap: nowrap;
 }
 .sidebar li .profile-details a {
-  display: block;
+  display: inline;
   padding: 0px;
   color: #fff;
   background: none;
 }
-.sidebar li.profile .job {
-  font-size: 12px;
+
+.sidebar li .profile-details a:hover {
+  /* Do something */
 }
-.sidebar .profile #log_out {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background: #1d1b31;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 0px;
-  transition: all 0.5s ease;
-}
-.sidebar.open .profile #log_out {
-  width: 50px;
-  background: none;
-}
+
+/* ------------------Main page------------------------ */
 .page {
   position: relative;
   background: #e4e9f7;
@@ -345,4 +298,50 @@ html {
   font-size: 25px;
   font-weight: 500;
   margin: 18px;
+}
+
+.primary-color {
+  color: rgb(76, 39, 161);
+}
+
+.container {
+  margin: 2rem 5rem;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.button-row {
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-caption {
+  color: rgb(128, 128, 128);
+}
+
+.active {
+  color: coral;
+}
+
+/* ---------------------------- Home ------------------------- */
+#home-section {
+  height: 100vh;
+}
+
+/* -----------------------Footer ----------------------- */
+footer {
+  background-color: #2e2e2e;
+  color: #ffffff;
+
+  padding: 1rem 3rem;
 }
