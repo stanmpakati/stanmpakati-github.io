@@ -92,7 +92,7 @@
           <p class="mat-caption">
             Are you looking for a Mobile and Web Developer?
           </p>
-          <h1>I'm <span class="primary-color">Stan Mpakati</span></h1>
+          <h1 class='mb-1'>I'm <span class="primary-color">Stan Mpakati</span></h1>
           <p>
             I'm a mobile and web developer from Zimbabwe. Currently still in
             school but I can still meet all your web and mobile app needs
@@ -104,11 +104,13 @@
               href="/static/Stan Mpakati CV.pdf"
               download="Stan Mpakati CV.pdf"
               color="accent"
+              onclick="openSnackbar()"
             >
               <mat-icon>download</mat-icon> Download CV
             </a>
             <a href="#about">Continue</a>
           </div>
+          <div id="snackbar">File Downloading...</div>
         </div>
       </div>
     </section>

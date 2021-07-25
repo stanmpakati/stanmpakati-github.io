@@ -24,3 +24,17 @@ for (var i = 0; i < links.length; i++) {
     this.className += " active";
   });
 }
+
+// Opening a snack bar when user downloads CV
+function openSnackbar() {
+  // Get the snackbar DIV
+  var snackbar = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  snackbar.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function () {
+    snackbar.className = snackbar.className.replace("show", "");
+  }, 3000);
+}
