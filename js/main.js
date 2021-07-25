@@ -1,14 +1,7 @@
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
 
 closeBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  menuBtnChange(); //calling the function(optional)
-});
-
-searchBtn.addEventListener("click", () => {
-  // Sidebar open when you click on the search iocn
   sidebar.classList.toggle("open");
   menuBtnChange(); //calling the function(optional)
 });
@@ -20,4 +13,14 @@ function menuBtnChange() {
   } else {
     closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
   }
+}
+
+// To switch active states
+var links = document.querySelectorAll(".link");
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }

@@ -249,8 +249,12 @@ html {
   transition: all 0.4s ease;
   background: #11101d;
 }
-.sidebar li a:hover {
+.sidebar li a:hover,
+.sidebar li a.active:hover {
   background: #fff;
+}
+.sidebar li a.active {
+  background: rgba(255, 255, 255, 0.212);
 }
 .sidebar li a .links_name {
   color: #fff;
