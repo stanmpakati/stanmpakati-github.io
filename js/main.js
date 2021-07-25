@@ -38,3 +38,22 @@ function openSnackbar() {
     snackbar.className = snackbar.className.replace("show", "");
   }, 3000);
 }
+
+// respond to screen sizes
+$(window).on("resize", resetLogo());
+// $(document).ready(resetLogo());
+
+// Set classes based on device width
+function resetLogo() {
+  console.log($(window).width());
+
+  if ($(window).width() < 768) {
+    $("body").addClass("mobile");
+    $(".sidebar").removeClass("open");
+    console.log($(".sidebar").attr("class"));
+    console.log($("body").attr("class"));
+  } else {
+    $("body").removeClass("mobile");
+  }
+  console.log($(".sidebar").attr("class"));
+}
