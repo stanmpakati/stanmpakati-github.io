@@ -48,8 +48,6 @@ function resetLogo() {
   if ($(window).width() < 768) {
     $("body").addClass("mobile");
     $(".sidebar").removeClass("open");
-    console.log($(".sidebar").attr("class"));
-    console.log($("body").attr("class"));
   } else {
     $("body").removeClass("mobile");
   }

@@ -505,7 +505,7 @@ footer {
     overflow-x: hidden;
   }
   .mobile .sidebar {
-    width: 100%;
+    width: 100vw;
     height: 78px;
 
     display: flex;
@@ -577,5 +577,10 @@ footer {
 
   #skills-section {
     flex-flow: column;
+  }
+
+  .page-title .title {
+    white-space: wrap;
+    font-size: 1.2rem;
   }
 }
