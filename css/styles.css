@@ -172,40 +172,6 @@ h1 {
 .sidebar.open li .tooltip {
   display: none;
 }
-.sidebar input {
-  font-size: 15px;
-  color: #fff;
-  font-weight: 400;
-  outline: none;
-  height: 50px;
-  width: 100%;
-  width: 50px;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.5s ease;
-  background: #1d1b31;
-}
-.sidebar.open input {
-  padding: 0 20px 0 50px;
-  width: 100%;
-}
-.sidebar .bx-search {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  font-size: 22px;
-  background: #1d1b31;
-  color: #fff;
-}
-.sidebar.open .bx-search:hover {
-  background: #1d1b31;
-  color: #fff;
-}
-.sidebar .bx-search:hover {
-  background: #fff;
-  color: #11101d;
-}
 .sidebar li a {
   display: flex;
   height: 100%;
@@ -274,6 +240,7 @@ h1 {
 
 .sidebar li .profile-details a:hover {
   /* Do something */
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* ------------------Main page------------------------ */
@@ -325,6 +292,10 @@ h1 {
   margin-top: 1rem;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 .button-row {
   width: 100%;
 }
@@ -336,6 +307,25 @@ h1 {
 .mat-caption {
   color: rgb(46, 46, 46);
   font-size: 1rem;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #8d8996;
+}
+
+.btn:hover {
+  filter: brightness(0.6);
+  box-shadow: 0 5px 10px rgba(26, 9, 68, 0.3);
+}
+
+.btn-primary {
+  background-color: rgb(76, 39, 161);
 }
 
 .active {
@@ -416,6 +406,10 @@ h1 {
 /* ---------------------------- Home ------------------------- */
 #home-section {
   height: 100vh;
+}
+
+.btn-primary {
+  margin-right: 5rem;
 }
 
 /* -----------------------Footer ----------------------- */
