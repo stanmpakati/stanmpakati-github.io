@@ -54,9 +54,97 @@ a {
 html {
   scroll-behavior: smooth;
   font-size: 1.2rem;
+  background: #e4e9f7;
 }
 
 h1 {
+  font-weight: 600;
+}
+
+.primary-color {
+  color: rgb(76, 39, 161);
+}
+
+.container {
+  margin: 2rem 5rem;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.button-row {
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-caption {
+  color: rgb(46, 46, 46);
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #8d8996;
+}
+
+.btn:hover {
+  filter: brightness(0.6);
+  box-shadow: 0 5px 10px rgba(26, 9, 68, 0.3);
+}
+
+.btn-primary {
+  background-color: rgb(76, 39, 161);
+}
+
+.page-title {
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.page-title hr {
+  width: 100%;
+  border-width: 2px;
+  border-color: #11101d;
+}
+
+.page-title .title {
+  margin-left: 12px;
+  margin-right: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -246,7 +334,6 @@ h1 {
 /* ------------------Main page------------------------ */
 .page {
   position: relative;
-  background: #e4e9f7;
   min-height: 100vh;
   top: 0;
   left: 78px;
@@ -267,69 +354,26 @@ h1 {
   margin: 18px;
 }
 
-.primary-color {
-  color: rgb(76, 39, 161);
+/* ---------------------------- Home ------------------------- */
+#home-section {
+  height: 100vh;
 }
 
-.container {
-  margin: 2rem 5rem;
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+#home-section .btn-primary {
+  margin-right: 5rem;
 }
 
-.w-100 {
-  width: 100%;
+/* ---------------------------- About ------------------------- */
+#about {
+  height: 100vh;
 }
 
-.mb-1 {
-  margin-bottom: 1rem;
-}
+/* -----------------------Footer ----------------------- */
+footer {
+  background-color: #2e2e2e;
+  color: #ffffff;
 
-.mt-1 {
-  margin-top: 1rem;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.button-row {
-  width: 100%;
-}
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-.mat-caption {
-  color: rgb(46, 46, 46);
-  font-size: 1rem;
-}
-
-.btn {
-  padding: 10px 14px;
-  border-radius: 8px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: #8d8996;
-}
-
-.btn:hover {
-  filter: brightness(0.6);
-  box-shadow: 0 5px 10px rgba(26, 9, 68, 0.3);
-}
-
-.btn-primary {
-  background-color: rgb(76, 39, 161);
-}
-
-.active {
-  color: coral;
+  padding: 1rem 3rem;
 }
 
 /* ---------------------------- Snackbar --------------------- */
@@ -401,21 +445,4 @@ h1 {
     bottom: 0;
     opacity: 0;
   }
-}
-
-/* ---------------------------- Home ------------------------- */
-#home-section {
-  height: 100vh;
-}
-
-.btn-primary {
-  margin-right: 5rem;
-}
-
-/* -----------------------Footer ----------------------- */
-footer {
-  background-color: #2e2e2e;
-  color: #ffffff;
-
-  padding: 1rem 3rem;
 }
