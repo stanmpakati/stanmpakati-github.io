@@ -2,10 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .contact-bubble {
+  list-style: none;
+  position: relative;
+}
+
+.contact-bubble a {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
+
 a {
   text-decoration: none;
 }
@@ -63,6 +69,10 @@ h1 {
 
 .w-100 {
   width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .mb-1 {
@@ -75,10 +85,6 @@ h1 {
 
 .mt-2 {
   margin-top: 2rem;
-}
-
-.button-row {
-  width: 100%;
 }
 
 .spacer {
@@ -145,6 +151,7 @@ h1 {
   opacity: 0;
   pointer-events: none;
   transition: 0s;
+  word-wrap: none;
 }
 
 /* ------------------------------ Side Bar ------------------------ */
@@ -362,6 +369,11 @@ li:hover .tooltip {
   margin-right: 5rem;
 }
 
+#home-section .container {
+  display: flex;
+  justify-content: center;
+}
+
 /* ---------------------------- About ------------------------- */
 #about {
   min-height: 100vh;
@@ -409,7 +421,12 @@ li:hover .tooltip {
   flex: 50%;
 }
 
-/* -----------------------Footer ----------------------- */
+/* ----------------------- Contact ---------------------- */
+#contact h2 {
+  margin-bottom: 24px;
+}
+
+/* ----------------------- Footer ----------------------- */
 footer {
   background-color: #2e2e2e;
   color: #ffffff;
@@ -562,9 +579,9 @@ footer {
     min-height: calc(100% - 78px);
   }
 
-  /* .page-content {
-    margin-top: 50px;
-  } */
+  .page-content {
+    margin-top: 30px;
+  }
 
   #home-section .btn-primary {
     margin-right: 16px;
