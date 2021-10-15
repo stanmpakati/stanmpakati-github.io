@@ -529,12 +529,12 @@ footer {
 }
 @media (max-width: 768px) {
   body {
-    width: 100vw;
+    width: 100vw !important;
     /* height: 100vh; */
     overflow-x: hidden;
   }
-  .mobile .sidebar {
-    width: 100vw;
+  .sidebar {
+    width: 100vw !important;
     height: 78px;
 
     display: flex;
@@ -544,11 +544,16 @@ footer {
     position: fixed;
   }
 
+  .sidebar.open #circle-avatar img {
+    width: 57px;
+    margin: 0;
+  }
+
   .sidebar #circle-avatar {
     margin: 0;
   }
 
-  .mobile .sidebar #circle-avatar .logo_name {
+  .sidebar #circle-avatar .logo_name {
     display: none;
   }
 
@@ -556,7 +561,7 @@ footer {
     display: none;
   }
 
-  .mobile .sidebar .nav-list {
+  .sidebar .nav-list {
     display: flex;
     flex-flow: row;
     align-items: center;

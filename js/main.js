@@ -40,7 +40,7 @@ function openSnackbar() {
 }
 
 // respond to screen sizes
-$(window).on("resize", resetLogo());
+$(document).on("resize", resetLogo());
 // $(document).ready(resetLogo());
 
 // Set classes based on device width
