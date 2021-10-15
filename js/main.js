@@ -45,10 +45,13 @@ $(window).on("resize", resetLogo());
 
 // Set classes based on device width
 function resetLogo() {
+  console.log("track");
   if ($(window).width() < 768) {
+    console.log("mobile");
     $("body").addClass("mobile");
     $(".sidebar").removeClass("open");
   } else {
+    console.log("web");
     $("body").removeClass("mobile");
   }
 }

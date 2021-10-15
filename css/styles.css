@@ -70,10 +70,13 @@ h1 {
 .w-100 {
   width: 100%;
   margin-top: 2rem;
-  display: flex;
+  /* display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
 
 .mb-1 {
